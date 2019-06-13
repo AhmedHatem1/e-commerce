@@ -1,3 +1,4 @@
+import { ProductGuardGuard } from "./Products/product-guard.guard";
 import { PageNotFoundComponent } from "./shared/page-not-found/page-not-found.component";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { ProductDetailsComponent } from "./Products/product-details/product-details.component";
@@ -8,7 +9,11 @@ import { Routes, RouterModule } from "@angular/router";
 const routes: Routes = [
   { path: "", component: WelcomeComponent, pathMatch: "full" },
   { path: "products", component: ProductListComponent },
-  { path: "products/:id", component: ProductDetailsComponent },
+  {
+    path: "products/:id",
+    canActivate: [ProductGuardGuard],
+    component: ProductDetailsComponent
+  },
   { path: "**", component: PageNotFoundComponent }
 ];
 

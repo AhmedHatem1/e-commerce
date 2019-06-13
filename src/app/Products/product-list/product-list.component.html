@@ -38,7 +38,11 @@
               [alt]="product.productName"
             />
           </td>
-          <td>{{ product.productName }}</td>
+          <td>
+            <a [routerLink]="product.productId" class="nav-link text-primary">{{
+              product.productName
+            }}</a>
+          </td>
           <td>{{ product.productCode }}</td>
           <td>{{ product.releaseDate }}</td>
           <td>{{ product.description }}</td>
@@ -52,6 +56,5 @@
         </tr>
       </tbody>
     </table>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>

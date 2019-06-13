@@ -1,9 +1,46 @@
 <div class="card">
-  <h5 class="card-header bg-secondary text-dark ">{{ pageTitle }}</h5>
+  <h5 class="card-header bg-secondary">{{ pageTitle }}</h5>
   <div class="card-body">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus
-    laboriosam, error incidunt delectus, enim, ad fugiat tempore similique nam
-    natus voluptatibus iure porro velit nisi blanditiis impedit voluptatem
-    repellendus?
+    <div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img [src]="product.imageUrl" alt="" />
+        </div>
+
+        <div class="col-sm-8">
+          <h2 class="text-primary font-weight-bold mb-2">
+            {{ product.productName }}
+          </h2>
+          <ul class="list-unstyled">
+            <li>
+              <h4>
+                <span class="font-weight-bold">Code : </span>
+                {{ product.productCode }}
+              </h4>
+            </li>
+            <li>
+              <h4>
+                <span class="font-weight-bold">Release Date : </span
+                >{{ product.releaseDate }}
+              </h4>
+            </li>
+            <li>
+              <h4>
+                <span class="font-weight-bold">Price : </span>
+                {{ product.price }}
+              </h4>
+            </li>
+
+            <li>
+              <h4>{{ product.description }}</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary my-2" (click)="onBack()">
+      <i class="fa fa-backward"></i> Back
+    </button>
   </div>
 </div>

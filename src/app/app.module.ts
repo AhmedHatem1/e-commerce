@@ -9,6 +9,8 @@ import { ProductDetailsComponent } from "./Products/product-details/product-deta
 import { NavComponent } from "./shared/nav/nav.component";
 import { RatingComponent } from "./shared/rating/rating.component";
 import { ProductService } from "./Products/product.service";
+import { WelcomeComponent } from './welcome/welcome.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ProductService } from "./Products/product.service";
     ProductListComponent,
     ProductDetailsComponent,
     NavComponent,
-    RatingComponent
+    RatingComponent,
+    WelcomeComponent,
+    PageNotFoundComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [ProductService],

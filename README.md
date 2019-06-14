@@ -32,12 +32,9 @@ npm run test
 
 👤 **Ahmed Hatem**
 
-* Twitter: [@Ahmedhatem96](https://twitter.com/Ahmedhatem96)
-* Github: [@AhmedHatem1](https://github.com/AhmedHatem1)
+- Twitter: [@Ahmedhatem96](https://twitter.com/Ahmedhatem96)
+- Github: [@AhmedHatem1](https://github.com/AhmedHatem1)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you !
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

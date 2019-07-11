@@ -1,3 +1,4 @@
+import { AddProductComponent } from "./Products/add-product/add-product.component";
 import { ProductGuardGuard } from "./Products/product-guard.guard";
 import { PageNotFoundComponent } from "./shared/page-not-found/page-not-found.component";
 import { WelcomeComponent } from "./welcome/welcome.component";
@@ -13,6 +14,10 @@ const routes: Routes = [
     path: "products/:id",
     canActivate: [ProductGuardGuard],
     component: ProductDetailsComponent
+  },
+  {
+    path: "add-product",
+    component: AddProductComponent
   },
   { path: "**", component: PageNotFoundComponent }
 ];

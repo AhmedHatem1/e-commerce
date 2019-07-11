@@ -38,4 +38,8 @@ export class ProductService {
     console.error(errorMessage);
     return throwError(errorMessage);
   }
+
+  addProduct(newProduct) {
+    return this.http.post(this.productUrl, newProduct);
+  }
 }
